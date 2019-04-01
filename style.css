@@ -62,6 +62,9 @@ footer {
 			"skills summary work";
 	}
 }
+article.blog_post {
+	text-indent: 3em each-line;
+}
 /*---Font size rulesets---*/
 html {
 	font-size: 10px;
