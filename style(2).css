@@ -1,0 +1,52 @@
+header, div {
+	border: solid;
+	border-width: 2px;
+	border-color: black;
+	padding: 20px;
+	margin: 2px;
+}
+header {
+	display:flex;
+	justify-content:center;
+}
+#name{
+	float:right;
+}
+.contant-links{
+	float:left;
+}
+main{
+	max-width:1080px;
+	margin:0 auto;
+}
+div.project-previews{
+	display:flex;
+	justify-content:space-around;
+}
+
+div.about{
+	display:grid;
+	grid-gap:2px;
+	grid-template-areas:
+		"img small small"
+		"edu edu skills";
+}
+.img{
+	grid-area:img;
+}
+.small{
+	grid-area:small;
+}
+.edu{
+	grid-area:edu;
+}
+.skills{
+	grid-area:skills;
+}
+.work-title{
+	text-align:center;
+}
+div.jobs{
+	display:flex;
+	justify-content:space-around;
+}
