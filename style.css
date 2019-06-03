@@ -19,35 +19,6 @@ nav {
 .heading {
 	grid-area: heading;
 }
-.full-content {
-	grid-area: full-content;
-	display: grid;
-	grid-gap: 5px;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas:
-			"intro intro"
-			"skills work"
-			"summary summary";
-}
-.skills {
-	grid-area: skills;
-	margin: 0 auto;
-}
-.intro {
-	grid-area: intro;
-	margin: auto 20px auto 20px;
-}
-.work {
-	grid-area: work;
-	margin: 0 auto;
-}
-.sub-content {
-	grid-area: summary;
-	margin: auto 20px auto 20px;
-}
-footer {
-	grid-area: footer;
-}
 @media (min-width: 500px){
 	body {
 		max-width: 1080px;
@@ -61,9 +32,6 @@ footer {
 			"skills intro work"
 			"skills summary work";
 	}
-}
-article.blog_post {
-	text-indent: 3em each-line;
 }
 /*---Font size rulesets---*/
 html {
@@ -97,12 +65,48 @@ a:active {
 a:visited {
 	color: #1fc8ff;
 }
-
+/*---Home page---*/
+.full-content {
+	grid-area: full-content;
+	display: grid;
+	grid-gap: 5px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"intro intro"
+			"skills work"
+			"summary summary";
+}
+.skills {
+	grid-area: skills;
+	margin: 0 auto;
+}
+.intro {
+	grid-area: intro;
+	margin: auto 20px auto 20px;
+}
+.work {
+	grid-area: work;
+	margin: 0 auto;
+}
+.sub-content {
+	grid-area: summary;
+	margin: auto 20px auto 20px;
+}
 .job {
 	font-size: 2.0rem;
 	text-decoration: bold;
 	margin: 5px auto 5px auto;
 }
+footer {
+	grid-area: footer;
+}
+/*---Article pages---*/
+article.blog_post {
+	text-indent: 3em each-line;
+}
+
+
+
 
 
 
